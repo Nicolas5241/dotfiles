@@ -27,5 +27,7 @@ mkdir -p "$HOME/.config"
 link "$DOTFILES_DIR/nvim"   "$HOME/.config/nvim"
 link "$DOTFILES_DIR/hypr"   "$HOME/.config/hypr"
 link "$DOTFILES_DIR/fuzzel" "$HOME/.config/fuzzel"
+link "$DOTFILES_DIR/waybar" "$HOME/.config/waybar"
+link "$DOTFILES_DIR/niri" "$HOME/.config/niri"
 
 echo "Done ✅"
