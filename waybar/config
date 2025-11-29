@@ -2,12 +2,12 @@
     "layer": "top",
     "position": "top",
     "spacing": 0,
-    "height": 10,
+    "height": 44,
     "modules-left": [
-        "hyprland/workspaces"
+        "niri/workspaces"
     ],
     "modules-center": [
-        "hyprland/window"
+        "niri/window"
     ],
     "modules-right": [
         "tray",
@@ -17,11 +17,10 @@
         "battery",
         "clock"
     ],
-    "hyprland/window": {
+    "niri/window": {
         "format": "{}",
     },
-    "hyprland/workspaces": {
-        "on-click": "activate",
+    "niri/workspaces": {
         "format": "{icon}",
         "format-icons": {
             "default": "",
@@ -38,13 +37,6 @@
             "active": "󱓻",
             "urgent": "󱓻"
         },
-        "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-        }
     },
     "memory": {
         "interval": 5,

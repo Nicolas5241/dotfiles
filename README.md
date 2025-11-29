@@ -1,7 +1,8 @@
 # My dotfiles
 ## Configs
 The dotfiles include configurations for:
-- Hyprland
+- Niri
+- Waybar
 - Neovim
 - Fuzzel
 ## Install

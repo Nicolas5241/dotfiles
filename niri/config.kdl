@@ -1,5 +1,7 @@
 // https://yalter.github.io/niri/Configuration:-Introduction
 
+spawn-at-startup "swaybg" "-i" "/home/nicolas5241/Pictures/Wallpapers/hahayes.jpg"
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
@@ -249,6 +251,12 @@ layout {
     }
 }
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
@@ -262,7 +270,7 @@ spawn-at-startup "waybar"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
