@@ -1,6 +1,31 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+set -e
 
-current_dir=${PWD}
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-ln -sf $current_dir/nvim ~/.config/nvim
-ln -sf $current_dir/hypr ~/.config/hypr
+link() {
+  local src="$1"
+  local dst="$2"
+
+  if [ -L "$dst" ]; then
+    echo "Removing existing symlink: $dst"
+    rm "$dst"
+
+  elif [ -e "$dst" ]; then
+    backup="$dst.backup.$(date +%s)"
+    echo "Backing up existing path to: $backup"
+    mv "$dst" "$backup"
+  fi
+
+  ln -s "$src" "$dst"
+  echo "Linked $dst → $src"
+}
+
+mkdir -p "$HOME/.config"
+
+# === Your links ===
+link "$DOTFILES_DIR/nvim"   "$HOME/.config/nvim"
+link "$DOTFILES_DIR/hypr"   "$HOME/.config/hypr"
+link "$DOTFILES_DIR/fuzzel" "$HOME/.config/fuzzel"
+
+echo "Done ✅"
