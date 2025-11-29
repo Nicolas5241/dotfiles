@@ -50,6 +50,7 @@ window#waybar.hidden {
   background-color: #f38ba8;
 }
 
+#cpu,
 #memory,
 #custom-power,
 #battery,
@@ -78,6 +79,10 @@ window#waybar.hidden {
   color: #1793d1;
 }
 
+#cpu {
+  background-color: #ece942;
+}
+
 #memory {
   background-color: #fab387;
 }
@@ -103,7 +108,9 @@ window#waybar.hidden {
 }
 
 #wireplumber {
+  font-family: JetBrainsMono Nerd Font;
   background-color: #f9e2af;
+  padding-right: 20px;
 }
 
 #network {

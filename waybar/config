@@ -11,6 +11,7 @@
     ],
     "modules-right": [
         "tray",
+        "cpu",
         "memory",
         "network",
         "wireplumber",
@@ -38,9 +39,12 @@
             "urgent": "󱓻"
         },
     },
+    "cpu": {
+        "format": "  {usage}%",
+    },
     "memory": {
         "interval": 5,
-        "format": "󰍛 {}%",
+        "format": "RAM {}%",
         "max-length": 10
     },
     "tray": {
