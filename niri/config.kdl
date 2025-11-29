@@ -1,6 +1,10 @@
 // https://yalter.github.io/niri/Configuration:-Introduction
 
-spawn-at-startup "swaybg" "-i" "/home/nicolas5241/Pictures/Wallpapers/hahayes.jpg"
+spawn-at-startup "sh" "-c" "swaybg -i $HOME/Pictures/Wallpapers/wallpaper.jpg"
+
+environment {
+    QT_QPA_PLATFORMTHEME "qt5ct"
+}
 
 // Input device configuration.
 // Find the full list of options on the wiki:
