@@ -1,9 +1,11 @@
 // https://yalter.github.io/niri/Configuration:-Introduction
 
 spawn-at-startup "sh" "-c" "swaybg -i $HOME/Pictures/Wallpapers/wallpaper.jpg"
+spawn-at-startup "sh" "-c" "$HOME/.config/waybar/niri_waybar.sh"
 
 environment {
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    ELECTRON_OZONE_PLATFORM_HINT "wayland"
+    OZONE_PLATFORM "wayland"
     QT_QPA_PLATFORMTHEME "qt5ct"
 }
 
@@ -266,9 +268,6 @@ gestures {
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
-
-// This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
