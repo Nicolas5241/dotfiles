@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-waybar -c ~/.config/waybar/hyprland.jsonc&
+waybar -c ~/.config/waybar/niri.jsonc&
