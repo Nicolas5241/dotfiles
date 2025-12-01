@@ -2,6 +2,7 @@
 
 spawn-at-startup "sh" "-c" "swaybg -i $HOME/Pictures/Wallpapers/wallpaper.jpg"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/niri_waybar.sh"
+spawn-at-startup "dunst"
 
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "wayland"
