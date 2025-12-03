@@ -3,6 +3,7 @@
 spawn-at-startup "sh" "-c" "swaybg -i $HOME/Pictures/Wallpapers/wallpaper.jpg"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/niri_waybar.sh"
 spawn-at-startup "dunst"
+spawn-at-startup "kwalletd6"
 
 environment {
     QT_QPA_PLATFORMTHEME "qt5ct"
@@ -458,7 +459,7 @@ binds {
     // rather than stacked on top of each other.
     Mod+W { toggle-column-tabbed-display; }
 
-    Print { spawn "sh" "-c" "grim -g \"$(slurp)\" - | swappy -f -"; }
+    Print { spawn "sh" "-c" "grim -g \"$(slurp)\" - | wl-copy"; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
