@@ -30,4 +30,7 @@ link "$DOTFILES_DIR/waybar" "$HOME/.config/waybar"
 link "$DOTFILES_DIR/niri" "$HOME/.config/niri"
 link "$DOTFILES_DIR/hypr" "$HOME/.config/hypr"
 
+./colemak-dh/build_xkb.sh
+./colemak-dh/xkb/install-system.sh
+
 echo "Done ✅"
