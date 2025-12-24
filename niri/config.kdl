@@ -4,6 +4,7 @@ spawn-at-startup "sh" "-c" "swaybg -i $(xdg-user-dir PICTURES)/Wallpapers/wallpa
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/niri_waybar.sh"
 spawn-at-startup "dunst"
 spawn-at-startup "wl-paste" "-t" "text" "--watch" "clipman" "store" "--no-persist"
+spawn-at-startup "nm-applet"
 
 environment {
     QT_QPA_PLATFORMTHEME "qt5ct"
