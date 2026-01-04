@@ -30,6 +30,10 @@ desktop=(
   qt5ct dunst kwallet network-manager-applet
 )
 
+misc=(
+    brightnessctl
+)
+
 aur_packages=(
     clipman
 )
@@ -43,7 +47,8 @@ sudo pacman -S --needed \
   "${window_managers[@]}" \
   "${wayland[@]}" \
   "${apps[@]}" \
-  "${desktop[@]}"
+  "${desktop[@]}" \
+  "${misc[@]}"
 
 aur_install_success=false
 
