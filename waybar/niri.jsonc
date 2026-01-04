@@ -5,10 +5,10 @@
     "spacing": 0,
     "height": 44,
     "modules-left": [
-        "niri/workspaces"
+        "niri/workspaces",
+        "niri/window"
     ],
     "modules-center": [
-        "niri/window"
     ],
     "modules-right": [
         "tray",

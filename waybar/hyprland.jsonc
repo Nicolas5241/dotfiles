@@ -5,10 +5,10 @@
     "spacing": 0,
     "height": 44,
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
     ],
     "modules-right": [
         "tray",

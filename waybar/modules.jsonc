@@ -3,6 +3,7 @@
         "format": "{}"
     },
     "niri/workspaces": {
+        "expand": true,
         "format": "{icon}",
         "format-icons": {
             "default": "",
