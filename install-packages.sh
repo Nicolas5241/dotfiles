@@ -31,7 +31,7 @@ desktop=(
 )
 
 misc=(
-    brightnessctl
+    brightnessctl, polkit-kde-agent
 )
 
 aur_packages=(

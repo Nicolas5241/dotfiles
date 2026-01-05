@@ -6,6 +6,8 @@ spawn-at-startup "dunst"
 spawn-at-startup "wl-paste" "-t" "text" "--watch" "clipman" "store" "--no-persist"
 spawn-at-startup "nm-applet"
 
+spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
+
 environment {
     QT_QPA_PLATFORMTHEME "qt5ct"
     _JAVA_AWT_WM_NONREPARENTING "1"
