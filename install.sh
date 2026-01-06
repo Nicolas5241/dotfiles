@@ -1,6 +1,24 @@
 #!/usr/bin/env bash
 set -e
 
+if [[ "$EUID" -eq 0 && "${1:-}" != "root" && "${FLAG:-}" != "1" ]]; then
+    cat >&2 <<'EOF'
+This script cannot run as root unless you pass "root" as the first argument.
+If you are not root and tried to run this script using "sudo", run this script normally as it automatically asks for permissions.
+Example:
+  ./install.sh root
+EOF
+    exit 1
+fi
+
+if [[ "${FLAG:-}" != "1" ]]; then
+    echo "Re-running via sudo -E..."
+    exec sudo -E env FLAG=1 bash "$0" "$@"
+fi
+
+echo "Running with FLAG=1"
+echo "EUID=$EUID, first argument=${1:-}"
+
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 link() {
