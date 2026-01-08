@@ -18,6 +18,10 @@ aur_helpers=(
     paru yay pikaur trizen
 )
 
+shells=(
+    fish
+)
+
 wayland=(
   swaybg waybar grim slurp wl-clipboard
 )
@@ -48,7 +52,8 @@ sudo pacman -S --needed \
   "${wayland[@]}" \
   "${apps[@]}" \
   "${desktop[@]}" \
-  "${misc[@]}"
+  "${misc[@]}" \
+  "${shells[@]}"
 
 aur_install_success=false
 
