@@ -35,7 +35,7 @@ desktop=(
 )
 
 misc=(
-    brightnessctl polkit-kde-agent
+    brightnessctl polkit-kde-agent archlinux-xdg-menu
 )
 
 aur_packages=(
