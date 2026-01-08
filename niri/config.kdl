@@ -70,6 +70,11 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
+cursor {
+    xcursor-theme "breeze_cursors"
+    xcursor-size 24
+}
+
 output "HDMI-A-1" {
     // off
 
