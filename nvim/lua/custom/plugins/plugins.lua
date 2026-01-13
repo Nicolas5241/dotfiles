@@ -24,4 +24,5 @@ return {
 	require "custom.plugins.themes.tokyonight";
 
 	require "custom.plugins.misc.cord";
+    require "custom.plugins.misc.crates-nvim";
 }
