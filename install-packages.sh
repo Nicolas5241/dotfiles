@@ -27,7 +27,7 @@ wayland=(
 )
 
 apps=(
-  kitty fuzzel dolphin
+  kitty fuzzel thunar thunar-volman
 )
 
 desktop=(
