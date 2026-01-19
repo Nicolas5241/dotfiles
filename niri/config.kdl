@@ -344,7 +344,7 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+S hotkey-overlay-title="Open a File Manager: dolphin" { spawn "dolphin"; }
+    Mod+S hotkey-overlay-title="Open a File Manager: thunar" { spawn "thunar"; }
 
     Mod+Shift+D hotkey-overlay-title="Open clipboard history with fuzzel" { spawn "clipman" "pick" "--tool=CUSTOM" "--tool-args=fuzzel -d"; }
 
