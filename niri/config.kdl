@@ -3,7 +3,7 @@
 spawn-at-startup "sh" "-c" "swaybg -i $(xdg-user-dir PICTURES)/Wallpapers/wallpaper.jpg"
 spawn-at-startup "sh" "-c" "$HOME/.config/waybar/niri_waybar.sh"
 spawn-at-startup "dunst"
-spawn-at-startup "wl-paste" "-t" "text" "--watch" "clipman" "store" "--no-persist"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "nm-applet"
 
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
@@ -346,7 +346,7 @@ binds {
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+S hotkey-overlay-title="Open a File Manager: thunar" { spawn "thunar"; }
 
-    Mod+Shift+D hotkey-overlay-title="Open clipboard history with fuzzel" { spawn "clipman" "pick" "--tool=CUSTOM" "--tool-args=fuzzel -d"; }
+    Mod+Shift+D hotkey-overlay-title="Open clipboard history with fuzzel" { spawn "sh" "-c" "cliphist list | fuzzel -d | cliphist decode | wl-copy"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill waybar || exec waybar"; }
 

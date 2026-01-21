@@ -35,15 +35,13 @@ desktop=(
 )
 
 misc=(
-    brightnessctl polkit-kde-agent archlinux-xdg-menu
+    brightnessctl polkit-kde-agent archlinux-xdg-menu cliphist
 )
 
 aur_packages=(
-    clipman
 )
 
 aur_bin_pkg_pairs=(
-  "clipman=clipman"
 )
 
 echo "Installing packages with pacman"
